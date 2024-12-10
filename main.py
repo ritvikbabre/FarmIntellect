@@ -39,7 +39,7 @@ def main():
     # Run predictions
     crop_yield_result = yield_predictor.predict(farm_data)
     productivity_result = optimizer.optimize(farm_data)
-    soil_analysis_result = analyzer.analyze(farm_data)
+    soil_analysis_result = analyzer.assess_health(farm_data)
 
     # Display results
     print("Crop Yield Prediction:", crop_yield_result)
